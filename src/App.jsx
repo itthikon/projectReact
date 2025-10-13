@@ -7,13 +7,13 @@ const address = "กรุงเทพมหานคร"
 const [age,setAge]=useState(40)
 
 function add(){
-  setAge(age+1)
+  setAge(age + 1);
 }
 function subtract(){
-  setAge(age-1)
+  setAge(age - 1);
 }
 function reset(){
-  setAge(40)
+  setAge(40);
 }
 
   return (
@@ -21,9 +21,9 @@ function reset(){
     <h1>สวัสดีครับคุณ {name}</h1>
     <h2>ที่อยู่ : {address}</h2>
     <h3>อายุ : {age} ปี</h3>
-    <button onClick={add}>เพิ่ม</button>
-    <button onClick={subtract}>ลด</button>
-    <button onClick={reset}>เคลียร์</button>
+    <button onClick={()=>setAge(age + 1)</>}>เพิ่ม</button>
+    <button onClick={()=>setAge(age - 1)</button>}>ลด</button>
+    <button onClick={()=>setAge(40)}>เคลียร์</button>
   </>
   )
 }
