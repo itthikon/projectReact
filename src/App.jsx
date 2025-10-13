@@ -7,10 +7,10 @@ const address = "กรุงเทพมหานคร"
 const [age,setAge]=useState(40)
 
 function add(){
-
+  setAge(age+1)
 }
 function subtract(){
-
+  setAge(age-1)
 }
   return (
   <>    
