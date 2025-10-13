@@ -11,7 +11,7 @@ console.table(data)
 
   return (
   <>    
-
+  <h1>จำนวนประชากร {data.length} คน</h1>
   </>
   )
 }
