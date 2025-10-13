@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Header from "./components/Header";
 
 function App() {
   const [data,setdata]=useState([
@@ -10,7 +10,8 @@ function App() {
   const [show,setShow] = useState(true)
 
   return (
-  <>    
+  <>
+  <Header/>
   <h1>จำนวนประชากร {data.length} คน</h1>
   <button onClick={()=>setShow(!show)}>{show ? "ซ่อน" : "แสดง"}</button>
   <ul>
