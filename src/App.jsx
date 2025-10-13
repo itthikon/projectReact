@@ -6,8 +6,8 @@ function App() {
     {id:1,name:"อิทธิกร",gender:"ชาย"},
     {id:2,name:"สิริมา",gender:"หญิง"},
     {id:3,name:"ยอด",gender:"ชาย"}
-  ])
-console.table(data)
+  ]);
+  const [show,setShow] = useState(true)
 
   return (
   <>    
