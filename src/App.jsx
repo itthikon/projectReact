@@ -12,6 +12,11 @@ console.table(data)
   return (
   <>    
   <h1>จำนวนประชากร {data.length} คน</h1>
+  <ul>
+    {data.map((item) => (
+      <li key={item.id}>{item.id} | {item.name} | {item.gender}</li>
+      ))}
+  </ul>
   </>
   )
 }
