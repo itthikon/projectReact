@@ -1,9 +1,10 @@
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
+    const {title} = props
   return (
     <nav>
-      <h1>My app itkstudio</h1>
+      <h1>{title}</h1>
       <button>Light/Dark</button>
     </nav>
   );
