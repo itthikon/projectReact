@@ -1,10 +1,10 @@
 import { useState } from "react";
-import boy from "../assets/boy.svg";
-import girl from "../assets/react.svg";
-import "./PersonList.css";
 
-function PersonList(props) {
-  const {data} = props;
+import "./PersonList.css";
+import User from "./User";
+
+function PersonList({data, deleteUser}) {
+
   const [show, setShow] = useState(true);
 
   return (
@@ -17,17 +17,7 @@ function PersonList(props) {
       <ul>
         {show &&
           data.map((item) => (
-            <li key={item.id} style={{borderStyle:"solid",borderColor:item.gender=="ชาย" ? "green" : "pink"}}>
-              <img
-                src={item.gender === "ชาย" ? boy : girl}
-                width={50}
-                height={50}
-              />
-              <p>{item.name}</p>
-              <div className="control">
-                <button>ลบข้อมูล</button>
-              </div>
-            </li>
+            <User key={item.id} item={item} deleteUser={deleteUser}/>
           ))}
       </ul>
     </div>
