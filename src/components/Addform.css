@@ -33,3 +33,6 @@ select{
     padding: 7px 10px;
     background-color: green;
 }
+.btn-save:disabled{
+    background: grey;
+}

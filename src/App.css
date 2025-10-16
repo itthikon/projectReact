@@ -11,3 +11,13 @@ main{
   padding: 10px;
   /* border: 1px solid #000; */
 }
+.light{
+  background: white;
+  color: #000;
+  transition: all 0.5s;
+}
+.dark{
+  background: #15202b;
+  color: white;
+  transition: all 0.5s;
+}
