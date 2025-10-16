@@ -12,3 +12,6 @@ nav{
     color: tomato;
     font-family: monospace;
 }
+span{
+    cursor: pointer;
+}

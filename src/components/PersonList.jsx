@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 import "./PersonList.css";
 import User from "./User";
+
 
 function PersonList({data, deleteUser}) {
 
@@ -11,7 +14,8 @@ function PersonList({data, deleteUser}) {
     <div className="container">
       <div className="header">
         <h2>จำนวนประชากร {data.length} คน</h2>
-        <button onClick={() => setShow(!show)}>{show ? "ซ่อน" : "แสดง"}</button>
+
+        <span onClick={() => setShow(!show)}>{show ? <FaEyeSlash size={25}/> : <FaEye size={25}/>}</span>
       </div>
 
       <ul>
