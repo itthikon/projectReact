@@ -1,12 +1,13 @@
 .container{
     max-width: 800px;
-    margin: 10px;
+    margin: auto;
     /* border: 1px solid black; */
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px; */
 }
 form{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 label{
     font-size: 20px;
